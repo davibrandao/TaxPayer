@@ -19,7 +19,7 @@ public class IndividualTaxPayer extends Contributor{
             if(healthExpenses > 0)
             {
                 double temp = healthExpenses * 0.5;
-                taxes += temp;
+                taxes -= temp;
             }
             return taxes;
 
@@ -28,7 +28,7 @@ public class IndividualTaxPayer extends Contributor{
             if(healthExpenses > 0)
             {
                 double temp = healthExpenses * 0.5;
-                taxes += temp;
+                taxes -= temp;
             }
             return taxes;
         }
